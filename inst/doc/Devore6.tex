@@ -1278,8 +1278,8 @@ To get a single sample of size 10 from this Weibull distribution we use
 > rweibull(10, shape = 2, scale = 5)
 \end{Sinput}
 \begin{Soutput}
- [1] 3.35465 1.99426 0.90884 4.78812 8.35764 4.94287 6.66060 6.38006
- [9] 1.83546 9.33432
+ [1] 1.27869 3.11960 7.80384 7.30294 4.82608 4.57325 5.54761 8.08182
+ [9] 0.36395 4.30985
 \end{Soutput}
 \end{Schunk}
 We could store such a sample as, say, \texttt{samp}, then evaluate its
@@ -1290,25 +1290,25 @@ sample mean, sample median, and sample standard deviation.
 > print(samp)
 \end{Sinput}
 \begin{Soutput}
- [1] 2.1045 7.1842 3.0784 4.3427 3.1538 4.2008 8.5321 2.7531 6.4027 4.8325
+ [1] 8.4665 1.5767 6.7850 4.1789 5.3925 4.3791 2.6149 2.9047 2.7582 5.9991
 \end{Soutput}
 \begin{Sinput}
 > mean(samp)
 \end{Sinput}
 \begin{Soutput}
-[1] 4.6585
+[1] 4.5056
 \end{Soutput}
 \begin{Sinput}
 > median(samp)
 \end{Sinput}
 \begin{Soutput}
-[1] 4.2718
+[1] 4.279
 \end{Soutput}
 \begin{Sinput}
 > sd(samp)
 \end{Sinput}
 \begin{Soutput}
-[1] 2.0997
+[1] 2.1549
 \end{Soutput}
 \end{Schunk}
 Notice that every time \texttt{rweibull} is called a new sample is generated.
@@ -1329,33 +1329,32 @@ we put these calculations in a loop.
 + }
 \end{Sinput}
 \begin{Soutput}
- [1] 2.4070 4.9239 1.9632 6.8140 6.8132 5.0391 4.9345 5.2769 2.7553 4.8692
- [1] 4.55776 4.18261 4.93903 0.98124 5.16399 4.39556 4.31051 1.68283
- [9] 3.75651 3.88349
- [1]  6.4511  4.7788  2.6227  1.0426 10.7185  1.4989  1.8526  9.8054
- [9]  2.6549  8.1241
- [1] 3.2552 4.9369 5.7727 6.4057 5.4542 2.6201 3.0783 8.6905 1.8143 4.2472
- [1] 12.6809  4.0601  3.9255  6.5601  3.6758  2.7582  5.7285  1.8042
- [9]  0.2857  3.4341
- [1] 6.2628 8.1290 7.3250 5.5068 3.9804 6.1329 6.3925 6.6671 7.6181 7.7674
+ [1]  7.4490  2.5626  1.2540  5.4936  1.9451  5.2547 10.2377  1.9084
+ [9]  6.8749  6.9398
+ [1] 5.6970 4.6983 4.6034 4.7598 1.5094 7.4245 5.7113 4.2755 4.3692 6.2325
+ [1] 1.0708 3.1333 4.2469 2.2067 2.5153 2.9214 1.7380 2.5720 1.2324 8.7974
+ [1]  1.0653  1.5593 10.4470  2.2013  3.6280  2.8374  5.4964  5.2964
+ [9]  4.1558  4.5295
+ [1] 7.5048 2.0480 4.3202 3.2380 4.6256 2.4830 1.1985 1.3268 3.9844 7.8314
+ [1] 3.9658 4.8431 4.5372 4.5093 3.6345 5.0707 3.3752 5.1867 6.3153 4.0101
 \end{Soutput}
 \begin{Sinput}
 > means
 \end{Sinput}
 \begin{Soutput}
-[1] 4.5796 3.7854 4.9550 4.6275 4.4913 6.5782
+[1] 4.9920 4.9281 3.0434 4.1216 3.8561 4.5448
 \end{Soutput}
 \begin{Sinput}
 > medians
 \end{Sinput}
 \begin{Soutput}
-[1] 4.9292 4.2466 3.7169 4.5921 3.8007 6.5298
+[1] 5.3742 4.7290 2.5436 3.8919 3.6112 4.5232
 \end{Soutput}
 \begin{Sinput}
 > sds
 \end{Sinput}
 \begin{Soutput}
-[1] 1.6964 1.3715 3.6003 2.0584 3.3843 1.2336
+[1] 2.97922 1.55456 2.22752 2.68608 2.33184 0.86483
 \end{Soutput}
 \end{Schunk}
 In the first line we assign the names \texttt{means},
@@ -1560,7 +1559,7 @@ this.
 \begin{Soutput}
      shape       scale  
    8.792026   12.904674 
- ( 2.732520) ( 4.127671)
+ ( 2.732520) ( 4.127670)
 \end{Soutput}
 \end{Schunk}
 The MLEs are quite different from the method of moments estimates.
@@ -1628,7 +1627,7 @@ standard normal distribution.
 	One Sample t-test
 
 data:  Voltage 
-t = 72.4631, df = 47, p-value = < 2.2e-16
+t = 72.4631, df = 47, p-value < 2.2e-16
 alternative hypothesis: true mean is not equal to 0 
 95 percent confidence interval:
  53.18950 56.22716 
