@@ -1,0 +1,32 @@
+\documentclass{article}
+\usepackage{url}
+%%\VignetteIndexEntry{Introduction to the Devore6 package for R}
+%%\VignetteDepends{Devore6}
+\begin{document}
+\SweaveOpts{engine=R,eps=TRUE}
+\title{Introduction to the Devore6 package for R}
+\author{Douglas Bates\\Department of Statistics\\
+  University of Wisconsin-Madison}
+\date{}
+\maketitle
+<<preliminaries, echo=FALSE>>=
+options(prompt=">", width=60)
+@
+
+\section{What is R?}
+
+R is freely available, open source, computer system for statistical
+analysis and graphics.  It can be downloaded from the main R
+information site \url{www.r-project.org}, from the Comprehensive R
+Archive Network site \url{cran.r-project.org}, or from any of the
+mirrors of that site.  For example, those in the United States can
+expect faster downloads from the U.S. mirror
+\url{cran.us.r-project.org}.
+
+Binary versions of R are available for computers running Microsoft Windows
+(Windows 95 or later), for the Macintosh (OS X), and for various
+distributions of Linux.  The source code is also available on the
+archives but it is unlikely that you will need to compile R for an
+introductory Statistics course.
+
+\end{document}
