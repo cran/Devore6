@@ -17,7 +17,7 @@
 \source{
   Devore, J. L. (2003) \emph{Probability and Statistics for Engineering and the Sciences (6th ed)}, Duxbury
 }
-\reference{
+\references{
   A Bayesian Analysis of a Multiplicative Treatment Effect in Weather
   Modification, \emph{Technometrics}, 1975: 161-166.
 }

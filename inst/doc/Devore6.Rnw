@@ -2,8 +2,11 @@
 \usepackage{hyperref}
 \usepackage{url}
 \usepackage{amsmath}
+\usepackage{pgf}
 %%\VignetteIndexEntry{Using the Devore6 package}
 %%\VignetteDepends{Devore6}
+\newcommand\code{\bgroup\@codex}
+\def\@codex#1{{\normalfont\ttfamily\hyphenchar\font=-1 #1}\egroup}
 \begin{document}
 \SweaveOpts{engine=R,eps=FALSE,pdf=TRUE,width=5,height=3,strip.white=TRUE}
 \setkeys{Gin}{width=\textwidth}
@@ -13,13 +16,9 @@
 \date{}
 \maketitle
 <<preliminaries, echo=FALSE>>=
-options(width=75)
+options(width=75, show.signif.stars = FALSE)
 library(Devore6)
-data(xmp01.01, xmp01.05, xmp01.06, xmp01.10, xmp01.11,
-     xmp01.13, xmp01.14, xmp01.15, xmp01.16, xmp01.18,
-     xmp01.19, ex01.15, xmp04.28, xmp04.29, xmp04.30,
-     xmp06.02, xmp06.03, xmp06.12, xmp07.06, xmp07.11,
-     xmp07.15, xmp08.08, xmp08.09)
+library(lattice)
 @
 
 \tableofcontents
@@ -1219,6 +1218,209 @@ binom.test(x=14,n=20,p=0.9,alt="less")
 
 \chapter{Inference Based on Two Samples}
 \label{cha:twoSample}
+
+<<strbw,fig=TRUE,include=FALSE,width=8,height=2.5>>=
+print(bwplot(type ~ strength, xmp09.07, xlab = "Tensile strength (psi)"))
+@
+\pgfdeclareimage[width=\textwidth]{strbw}{Devore6-strbw}
+<<strqq,fig=TRUE,include=FALSE,width=8,height=3>>=
+print(qqmath(~ strength|type, xmp09.07,
+      xlab = "Standard normal quantiles",
+      ylab = "Tensile strength (psi)", 
+      type = c("g","p"), aspect = 1))
+@
+\pgfdeclareimage[width=\textwidth]{strqq}{Devore6-strqq}
+
+\section{Example 9.7}
+\label{sec:xmp0907}
+When given vectors of numbers as arguments, the summary function returns the 
+mean, min, max and quartiles of the given vector. 
+The qqnorm function is used to generate a qqplot of its given argument.
+The simplest use of the boxplot function creates a boxplot for each 
+vector argument passed to it.
+<<xmp0907>>=
+str(xmp09.07)
+@ 
+<<xmp0907bwprt,eval=FALSE>>=
+bwplot(type ~ strength, xmp09.07)
+@ 
+\centerline{\pgfuseimage{strbw}}
+<<xmp0907qqprt,eval=FALSE>>=
+qqmath(~strength|type, xmp09.07)
+@ 
+\centerline{\pgfuseimage{strqq}}
+<<xmp0907t>>=
+t.test(strength ~ type, xmp09.07, alt = "greater")
+@ 
+
+<<zincdiffqq,fig=TRUE,include=FALSE,width=8,height=4>>=
+print(qqmath( ~ I(bottom-surface), xmp09.08, type = c("g","p"),
+      xlab = "Standard normal quantiles", aspect = 1,
+      ylab = "Difference in zinc concentrations (mg/L)"))
+@
+\pgfdeclareimage[width=\textwidth]{zincdiffqq}{Devore6-zincdiffqq}
+
+\section{Example 9.8}
+\label{sec:xmp0908}
+The t.test function conducts various types of t tests. When given one vector argument,
+it performs a one sample test, when two vector arguments are given, and the paired option
+is specified as TRUE, the function can perform a paired two sample tests as well. Options 
+can also present to specify if a test is one or two sided. 
+<<xmp0908>>=
+str(xmp09.08)
+@ 
+<<xmp0908qqprt,eval=FALSE>>=
+qqmath( ~ I(bottom-surface), xmp09.08)
+@ 
+\centerline{\pgfuseimage{zincdiffqq}}
+<<xmp0908t>>=
+with(xmp09.08, t.test(bottom,surface,paired=TRUE))
+@
+
+<<propdiffqq,fig=TRUE,include=FALSE,width=8,height=4>>=
+print(qqmath( ~ Difference, xmp09.09, type = c("g","p"),
+      xlab = "Standard normal quantiles", aspect = 1,
+      ylab = "Difference in proportion of time (%)"))
+@
+\pgfdeclareimage[width=\textwidth]{propdiffqq}{Devore6-propdiffqq}
+
+\section{Example 9.9}
+\label{sec:xmp0909}
+<<xmp0909>>=
+str(xmp09.09)
+@ 
+<<xmp0909qqprt,eval=FALSE>>=
+qqmath(~ Difference, xmp09.09)
+@ 
+\centerline{\pgfuseimage{propdiffqq}}
+<<xmp0909t>>=
+with(xmp09.09, t.test(Before, After, paired = TRUE))
+@
+
+\section{Example 9.10}
+\label{sec:xmp0910}
+<<xmp0910>>=
+Difference <- c(5,19,25,10,10,10,28,46,25,38,14,23,14)
+qqnorm(Difference)
+qqline(Difference)
+t.test(Difference)
+@
+
+\chapter{The Analysis of Variance}
+\label{cha:manova}
+
+\chapter{Multifactor Analysis of Variance}
+\label{cha:manova}
+
+
+\section{Example 11.01}
+\label{sec:xmp1101}
+An \emph{interaction plot} shows the response versus the levels of
+  one factor with the points joined according to the levels of the
+  other factor.  It an additive model is valid, the lines should be
+  approximately parallel.
+
+For a balanced data set, the order of the factors does not
+    affect the calculations of the sums of squares nor any of the test
+    statistics and conclusions. However, for unbalanced data the order of the factors
+    is important.  In general we put the blocking factor(s) first and the
+    treatment factor(s) last.
+
+The \code{TukeyHSD} function can be applied to aov models with more
+  than one factor.  If we are only interested in selected factors we
+  can use the argument \code{which} to restrict the factors being
+  considered.
+
+Plots are useful aids in checking if assumptions have been satisfied. 
+To assess the constant variance assumption, residual plots are used
+    and the normal probability plot of the residuals is used to assess the
+    assumption of a normal distribution of the noise term.
+The simplest way to obtain such plots in R is to plot the fitted model object.  Use \code{which = 1}
+    to get residuals versus fitted values, \code{which = 2} to get
+    the qqnorm plot of the residuals, or \code{which = 1:2} to get both.
+
+<<xmp1101>>=
+with(xmp11.01, interaction.plot(treatment, brand, strength, col=2:4, lty=1))
+with(xmp11.01, interaction.plot(treatment, brand, strength, col=2:4, lty=1))
+with(xmp11.01, interaction.plot(brand, treatment, strength, col=2:4, lty=1))
+with(xmp11.01, interaction.plot(brand, treatment, strength, col=2:4, lty=1))
+
+anova(fm1 <- aov(strength ~ treatment + brand, xmp11.01))
+
+TukeyHSD(fm1, which = "treatment") 
+
+plot(fm1, which = 1:2)    
+@
+
+\section{Example 11.05}
+\label{sec:xmp1105}
+
+<<xmp1105>>=
+str(xmp11.05)
+with(xmp11.05, interaction.plot(humid, brand, power, col = 2:6, lty = 1))
+anova(fm1 <- aov(power ~ humid + brand, data = xmp11.05))
+TukeyHSD(fm1, which = "brand")
+plot(TukeyHSD(fm1, which = "brand"))
+plot(TukeyHSD(fm1, which = "brand"))
+@
+
+\section{Example 11.06}
+\label{sec:xmp1106}
+
+<<xmp1106>>=
+str(xmp11.06)
+anova(fm1 <- aov(Resp ~ Subject + Stimulus, data = xmp11.06))
+with(xmp11.06, interaction.plot(Stimulus, Subject, Resp, col = 2:6, lty = 1))
+TukeyHSD(fm1, which = "Stimulus")
+plot(fm1,which = 1)
+
+range(xmp11.06$Resp)
+anova(fm2 <- aov(log(Resp) ~ Subject + Stimulus, data = xmp11.06))
+with(xmp11.06, interaction.plot(Stimulus, Subject, log(Resp), col = 2:6, lty = 1))
+plot(fm2,which = 1)
+opar <- par(pty = 's')
+plot(fm2,which = 2)
+par(opar)
+plot(TukeyHSD(fm2, which = "Stimulus"))
+with(xmp11.06,interaction.plot(Stimulus, Subject, fitted(fm2), col=2:6, lty=1))
+@
+
+\section{Example 11.07}
+\label{sec:xmp1107}
+
+<<xmp1107>>=
+str(xmp11.07)
+xtabs(~ Variety + Density, data = xmp11.07)
+xtabs(Yield ~ Variety + Density, data = xmp11.07)
+
+xtabs(Yield ~ Variety + Density, xmp11.07)/ xtabs( ~ Variety + Density, xmp11.07)
+anova(fm1 <- aov(Yield ~ Density * Variety, data = xmp11.07))
+with(xmp11.07, interaction.plot(Density, Variety, Yield, col=2:6, lty=1))
+anova(fm2 <- aov(Yield ~ Density + Variety, xmp11.07))
+TukeyHSD(fm2)
+model.tables(fm2, type = "means")
+@
+
+\section{Example 11.11}
+\label{sec:xmp1111}
+<<xmp1111>>=
+str(xmp11.11)
+xtabs(~ Period + Coat + Strain, xmp11.11)
+anova(fm1 <- aov(Tempr ~ Period * Coat * Strain, xmp11.11))
+anova(fm2 <- update(fm1, . ~ . - Period:Strain -  Period:Coat:Strain))
+@
+
+\section{Example 11.12}
+\label{sec:xmp1112}
+<<xmp1112>>=
+str(xmp11.12)
+xtabs(as.integer(humidity) ~ row + column, xmp11.12)
+xtabs(abrasion ~ row + column, xmp11.12)
+anova(fm1 <- aov(abrasion ~ row + column + humidity, xmp11.12))
+model.tables(fm1, cterms = "humidity", type = "mean")
+TukeyHSD(fm1, which = "humidity")
+@
+
 
 
 \appendix

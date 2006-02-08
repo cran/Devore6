@@ -19,18 +19,16 @@
     and the Sciences (6th ed)}, Duxbury
 }
 \examples{
-data(xmp01.15)
-attach(xmp01.15)
-summary(lifetime)              # produces mean, median, etc.
-mean(lifetime, trim = 0.1)     # 10\% trimmed mean
-mean(lifetime, trim = 0.2)     # 20\% trimmed mean
-dotchart(lifetime)
-hist(lifetime)                 # display a histogram
-rug(lifetime)                  # add the data
-abline(v = median(lifetime), col = 2, lty = 2)
-abline(v = mean(lifetime), col = 3, lty = 2)
-abline(v = mean(lifetime, trim = 0.1), col = 4, lty = 2)
-abline(v = mean(lifetime, trim = 0.2), col = 5, lty = 2)
+with(xmp01.15, summary(lifetime))              # produces mean, median, etc.
+with(xmp01.15, mean(lifetime, trim = 0.1))     # 10\% trimmed mean
+with(xmp01.15, mean(lifetime, trim = 0.2))     # 20\% trimmed mean
+with(xmp01.15, dotchart(lifetime))
+with(xmp01.15, hist(lifetime))                 # display a histogram
+with(xmp01.15, rug(lifetime))                  # add the data
+with(xmp01.15, abline(v = median(lifetime), col = 2, lty = 2))
+with(xmp01.15, abline(v = mean(lifetime), col = 3, lty = 2))
+with(xmp01.15, abline(v = mean(lifetime, trim = 0.1), col = 4, lty = 2))
+with(xmp01.15, abline(v = mean(lifetime, trim = 0.2), col = 5, lty = 2))
 legend(600, 6,
   c("median", "mean", "10\% trimmed mean", "20\% trimmed mean"),
   col = 2:5, lty = 2)
