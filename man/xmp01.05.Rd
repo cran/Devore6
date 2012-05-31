@@ -5,14 +5,12 @@
 \description{
   Percentage of binge drinkers in undergraduates at 140 campuses
 }
-\usage{data(xmp01.05)}
 \format{
   A data frame with 140 observations on the following variable.
   \describe{
     \item{bingePct}{a numeric vector of percentage of binge drinkers}
   }
 }
-%\details{}
 \source{
   Devore, J. L. (2003) \emph{Probability and Statistics for Engineering
       and the Sciences (6th ed)}, Duxbury
@@ -23,7 +21,6 @@
   \emph{J. of the Amer. Med. Assoc.}, 1994: 1672-1677.
 }
 \examples{
-data(xmp01.05)
 str(xmp01.05)
 stem(xmp01.05$bingePct)
 stem(xmp01.05$bingePct, scale = 0.5)  # compare to Figure 1.4, p. 12

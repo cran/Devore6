@@ -23,7 +23,6 @@
     92--99.
 }
 \examples{
-data(ex04.82)
 attach(ex04.82)
 boxplot(lifetime, ylab = "Lifetime (hr)",
         main = "Bearing lifetimes from exercise 4.82",

@@ -31,7 +31,6 @@
     and the Sciences (6th ed)}, Duxbury
 }
 \examples{
-data(xmp13.13)
 fm1 <- lm(strength ~ x1 * x2, data = xmp13.13)
 summary(fm1)
 }

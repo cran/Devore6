@@ -24,7 +24,6 @@
     Electrical Insulation}, 70--78.
 }
 \examples{
-data(xmp04.30)
 attach(xmp04.30)
 ## Try normal probability plot first
 qqnorm(lifetime, ylab = "Lifetime (hr)")

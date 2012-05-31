@@ -29,7 +29,6 @@
     and the Sciences (6th ed)}, Duxbury
 }
 \examples{
-data(xmp01.10)
 attach(xmp01.10)
 hist(consump, col = "lightgray",
      xlab = "Adjusted energy consumption")

@@ -23,7 +23,6 @@
 	Engineering and the Sciences (6th ed)}, Duxbury
 }
 \examples{
-data(xmp01.06)
 attach(xmp01.06)
 summary(yardage)
 stem(yardage)

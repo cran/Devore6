@@ -5,7 +5,6 @@
 \description{
   Deposition of atmospheric pollutants in snowpacks.
 }
-\usage{data(ex13.53)}
 \format{
   A data frame with 17 observations on the following 3 variables.
   \describe{
@@ -15,7 +14,6 @@
       specified time period}
   }
 }
-%\details{}
 \source{
   Devore, J. L. (2003) \emph{Probability and Statistics for Engineering
     and the Sciences (6th ed)}, Duxbury
@@ -25,6 +23,6 @@
   Ratios'', \emph{J. of Environmental Engineering}, 2002: 186-195.
 }
 \examples{
-data(ex13.53)
+str(ex13.53)
 }
 \keyword{datasets}

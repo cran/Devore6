@@ -5,7 +5,6 @@
 \description{
   Oxygen consumption for 15 subjects on two types of exercise
 }
-\usage{data(ex01.70)}
 \format{
   A data frame with 15 observations on the following 2 variables.
   \describe{
@@ -13,7 +12,6 @@
     \item{Treadmill}{a numeric vector of oxygen consumption on a treadmill}
   }
 }
-%\details{}
 \source{
   Devore, J. L. (2003) \emph{Probability and Statistics for Engineering and the Sciences (6th ed)}, Duxbury
 }
@@ -23,6 +21,6 @@
     Sport and Exercise}, 1998: 518--522.
 }
 \examples{
-data(ex01.70)
+str(ex01.70)
 }
 \keyword{datasets}

@@ -6,7 +6,6 @@
   Benzodiazepine receptor binding in individuals suffering from
   Posttraumatic Stress Disorder (PTSD).
 }
-\usage{data(ex01.72)}
 \format{
   A data frame with 13 observations on the following 2 variables.
   \describe{
@@ -16,7 +15,6 @@
       healthy individuals}
   }
 }
-%\details{}
 \source{
   Devore, J. L. (2003) \emph{Probability and Statistics for Engineering
     and the Sciences (6th ed)}, Duxbury
@@ -27,6 +25,6 @@
     Psychiatry}, 2000: 1120--1126.
 }
 \examples{
-data(ex01.72)
+str(ex01.72)
 }
 \keyword{datasets}

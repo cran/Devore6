@@ -5,7 +5,6 @@
 \description{
   Blood glucose level in fish versus time since stress applied.
 }
-\usage{data(ex12.83)}
 \format{
   A data frame with 24 observations on the following 2 variables.
   \describe{
@@ -13,7 +12,6 @@
     \item{bloodgluc}{a numeric vector of blood glucose levels}
   }
 }
-%\details{}
 \source{
   Devore, J. L. (2003) \emph{Probability and Statistics for Engineering
     and the Sciences (6th ed)}, Duxbury
@@ -24,6 +22,6 @@
   Fish'', \emph{J. of the World Aquaculture Society}, 1999: 276--284.
 }
 \examples{
-data(ex12.83)
+str(ex12.83)
 }
 \keyword{datasets}

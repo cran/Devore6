@@ -25,7 +25,6 @@
   optimum metal cutting conditions'', \emph{J. Eng. for Industry}, 315--322. 
 }
 \examples{
-data(xmp13.03)
 plot(ToolLife ~ time, data = xmp13.03)
 plot(ToolLife ~ time, data = xmp13.03, log = "xy")
 fm1 <- lm(log(ToolLife) ~ I(log(time)), data = xmp13.03)

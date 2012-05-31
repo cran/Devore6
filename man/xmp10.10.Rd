@@ -35,7 +35,6 @@
     854-858.
 }
 \examples{
-data(xmp10.10)
 xmp10.10$Rail <- factor(xmp10.10$Rail)
 boxplot(travel ~ Rail, xmp10.10, col = "lightgray",
   xlab = "Rail", ylab = "Zero-force travel time (microsec)",

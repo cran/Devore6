@@ -22,8 +22,6 @@
     }
   }
 }
-\details{
-}
 \source{
   Devore, J. L. (2003) \emph{Probability and Statistics for Engineering
     and the Sciences (6th ed)}, Duxbury
@@ -33,7 +31,6 @@
   blend fabrics'', \emph{J. of Testing and Evaluation}, 394-397.
 }
 \examples{
-data(xmp11.01)
 xmp11.01$brand <- factor(xmp11.01$brand)
 xmp11.01$treatment <- factor(xmp11.01$treatment)
 plot(strength ~ treatment, data = xmp11.01, col = "lightgray",

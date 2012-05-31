@@ -5,14 +5,12 @@
 \description{
   Coating thickness for low-viscosity paint.
 }
-\usage{data(ex04.83)}
 \format{
   A data frame with 16 observations on the following variable.
   \describe{
     \item{thickness}{a numeric vector}
   }
 }
-%\details{}
 \source{
   Devore, J. L. (2003) \emph{Probability and Statistics for Engineering
     and the Sciences (6th ed)}, Duxbury
@@ -22,6 +20,6 @@
   Study'', \emph{J. of Quality Technology}, 1992: 22--26.
 }
 \examples{
-data(ex04.83)
+str(ex04.83)
 }
 \keyword{datasets}

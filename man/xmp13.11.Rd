@@ -37,7 +37,6 @@
   Vardeman, S. (1994) \emph{Statistics Engineering Problem Solving}, 
 }
 \examples{
-data(xmp13.11)
 fm1 <- lm(Strength ~ Force + Power + Temperature + Time,
      data = xmp13.11)
 summary(fm1)

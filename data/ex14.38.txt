@@ -1,4 +1,0 @@
-Parsitiz Nonparas
-30 3
-16 8
-16 16

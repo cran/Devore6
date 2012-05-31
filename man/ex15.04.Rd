@@ -13,12 +13,10 @@ a numeric vector
 }
 }
 }
-\details{
-}
 \source{
   Devore, J. L. (2003) \emph{Probability and Statistics for Engineering and the Sciences (6th ed)}, Duxbury
 }
 \examples{
-data(ex15.04)
+str(ex15.04)
 }
 \keyword{datasets}

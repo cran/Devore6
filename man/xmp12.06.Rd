@@ -22,7 +22,6 @@
     and the Sciences (6th ed)}, Duxbury
 }
 \examples{
-data(xmp12.06)
 plot(lead ~ traffic, data = xmp12.06,
      xlab = "Traffic flow (1000's of cars per 24 hours)",
      ylab = expression(paste(plain("Lead content of tree bark ("),

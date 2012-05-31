@@ -27,6 +27,6 @@
   175--178.
 }
 \examples{
-data(ex12.50)
+str(ex12.50)
 }
 \keyword{datasets}

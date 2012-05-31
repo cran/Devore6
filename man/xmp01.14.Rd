@@ -5,7 +5,6 @@
 \description{
   Concentrations of transferrin receptor in a sample of pregnant women.
 }
-\usage{data(xmp01.14)}
 \format{
   A data frame with 12 observations on the following variable.
   \describe{
@@ -23,7 +22,6 @@
     Nutrition}, 1991: 1077--1081.
 }
 \examples{
-data(xmp01.14)
 str(xmp01.14)
 }
 \keyword{datasets}

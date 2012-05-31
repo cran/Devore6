@@ -22,7 +22,6 @@
   21-26.
 }
 \examples{
-data(xmp07.06)
 boxplot(xmp07.06,
   main = "AC Breakdown Voltage (kV)")
 # t.test gives a 95\% confidence interval on the mean

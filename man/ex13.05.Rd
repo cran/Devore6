@@ -5,7 +5,6 @@
 \description{
   Ice thickness versus elapsed time
 }
-\usage{data(ex13.05)}
 \format{
   A data frame with 33 observations on the following 2 variables.
   \describe{
@@ -13,7 +12,6 @@
     \item{icethick}{a numeric vector of ice thickness (mm)}
   }
 }
-%\details{}
 \source{
   Devore, J. L. (2003) \emph{Probability and Statistics for Engineering
     and the Sciences (6th ed)}, Duxbury} 
@@ -22,6 +20,6 @@
     Engr.}, 2001: 60-66.
 }
 \examples{
-data(ex13.05)
+str(ex13.05)
 }
 \keyword{datasets}

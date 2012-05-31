@@ -32,7 +32,6 @@
     Testing and Evaluation}, 187-193.
 }
 \examples{
-data(xmp09.10)
 boxplot(xmp09.10[, c("t1.min", "t4.wks")],
      main = "Data from Example 9.10")
 attach(xmp09.10)

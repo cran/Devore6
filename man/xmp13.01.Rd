@@ -21,7 +21,6 @@
     and the Sciences (6th ed)}, Duxbury 
 }
 \examples{
-data(xmp13.01)
 plot(emission ~ rate, data = xmp13.01,
      xlab = "Burner area liberation rate",
      ylab = expression(plain("NO")["x"]*
@@ -29,25 +28,18 @@ plot(emission ~ rate, data = xmp13.01,
      main = "Data from Example 13.1, page 545")
 fm1 <- lm(emission ~ rate, data = xmp13.01)
 abline(fm1)                   # plot 1, Figure 13.1
-if (require(MASS)) {
-   sres <- stdres(fm1)
-   plot(sres ~ fitted(fm1), ylab = "Standardized residuals",
-       xlab = "Fitted values")  # plot 2, Figure 13.1
-   abline(h = 0, lty = 2, lwd = 0)   # horizontal reference
-}
+sres <- rstandard(fm1)
+plot(sres ~ fitted(fm1), ylab = "Standardized residuals",
+     xlab = "Fitted values")  # plot 2, Figure 13.1
+abline(h = 0, lty = 2, lwd = 0)   # horizontal reference
 plot(resid(fm1) ~ fitted(fm1), ylab = "Residuals",
      xlab = "Fitted values")  # alternative plot 2
 abline(h = 0, lty = 2, lwd = 0)   # horizontal reference
 plot(fitted(fm1) ~ emission, data = xmp13.01)
 abline(0, 1)                  # plot 3, Figure 13.1
-if (require(MASS)) {
-   plot(sres ~ rate, data = xmp13.01) # plot 4
-   abline(h = 0, lty = 2, lwd = 0)
-   qqnorm(sres)               # plot 5
-} else {
-   plot(resid(fm1) ~ rate, data = xmp13.01) # plot 4
-   qqnorm(resid(fm1))         # plot 5
-}
+plot(sres ~ rate, data = xmp13.01) # plot 4
+abline(h = 0, lty = 2, lwd = 0)
+qqnorm(sres)               # plot 5
 ## The residuals versus fitted plot and the normal
 ## probability plot of the standardized residuals 
 plot(fm1, which = 1:2)

@@ -19,8 +19,6 @@
     }
   }
 }
-\details{
-}
 \source{
   Devore, J. L. (2003) \emph{Probability and Statistics for Engineering
     and the Sciences (6th ed)}, Duxbury
@@ -29,7 +27,6 @@
   time and distribution in the rat'', \emph{Life Sciences}, 839-846.
 }
 \examples{
-data(xmp10.05)
 plot(REMtime ~ ethanol, data = xmp10.05,
      xlab = "Ethanol concentration administered (g/kg)",
      ylab = "Amount of REM sleep during a 24 hour period")

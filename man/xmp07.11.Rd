@@ -14,8 +14,6 @@
     }
   }
 }
-\details{
-}
 \source{
   Devore, J. L. (2003) \emph{Probability and Statistics for Engineering
     and the Sciences (6th ed)}, Duxbury
@@ -24,7 +22,6 @@
     Testing and Evaluation}, 187-193.
 }
 \examples{
-data(xmp07.11)
 boxplot(xmp07.11)
 with(xmp07.11, qqnorm(Elasticity))
 with(xmp07.11, qqline(Elasticity))

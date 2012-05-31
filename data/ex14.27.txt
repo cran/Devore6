@@ -1,3 +1,0 @@
-C1	L>R	L=R	L<R	Sample.size
-"Men"	2	10	28	40
-"Women"	55	18	14	87

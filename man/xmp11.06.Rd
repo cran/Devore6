@@ -32,7 +32,6 @@
     Behavior}, 337-342
 }
 \examples{
-data(xmp11.06)
 plot(Resp ~ Stimulus, data = xmp11.06, col = "lightgray",
      main = "Data from Example 11.6",
      ylab = "Mean number of responses")

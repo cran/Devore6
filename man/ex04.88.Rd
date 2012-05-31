@@ -20,7 +20,6 @@
 	Engineering and the Sciences (6th ed)}, Duxbury
 }
 \examples{
-data(ex04.88)
 attach(ex04.88)
 ## Normal probability plot
 qqnorm(preciptn, ylab = "Precipitation (in)",

@@ -20,14 +20,11 @@
     }
   }
 }
-\details{
-}
 \source{
   Devore, J. L. (2003) \emph{Probability and Statistics for Engineering
     and the Sciences (6th ed)}, Duxbury
 }
 \examples{
-data(xmp10.01)
 boxplot(strength ~ type, data = xmp10.01, 
     main = "Data from Example (compare Figure 10.1, p. 405)")
 fm1 <- lm( strength ~ type, data = xmp10.01 )  # fit anova model

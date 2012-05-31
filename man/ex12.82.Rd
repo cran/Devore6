@@ -5,7 +5,6 @@
 \description{
   Percentage removal of contaminants versus inlet temperature.
 }
-\usage{data(ex12.82)}
 \format{
   A data frame with 33 observations on the following 2 variables.
   \describe{
@@ -13,7 +12,6 @@
     \item{removal}{a numeric vector of removal percentages}
   }
 }
-%\details{}
 \source{
   Devore, J. L. (2003) \emph{Probability and Statistics for Engineering
     and the Sciences (6th ed)}, Duxbury
@@ -23,6 +21,6 @@
   Medium Biofilter'', \emph{Water Environment Research}, 2001: 426-435.
 }
 \examples{
-data(ex12.82)
+str(ex12.82)
 }
 \keyword{datasets}

@@ -27,7 +27,6 @@
       Accident}, Vol. \bold{1}, 1986: 129--131
 }
 \examples{
-data(xmp01.01)
 attach(xmp01.01)
 summary(temp)             # summary statistics
 stem(temp)

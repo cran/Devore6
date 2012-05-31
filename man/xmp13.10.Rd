@@ -5,7 +5,6 @@
 \description{
   Ultimate shear strength of a rubber compound versus cure temperature.
 }
-\usage{data(xmp13.10)}
 \format{
   A data frame with 8 observations on the following 3 variables.
   \describe{
@@ -14,7 +13,6 @@
     \item{y}{a numeric vector of ultimate shear strength (psi)}
   }
 }
-%\details{}
 \source{
   Devore, J. L. (2003) \emph{Probability and Statistics for Engineering
     and the Sciences (6th ed)}, Duxbury
@@ -24,6 +22,6 @@
   Analysis'', \emph{J. Quality Technology}, 1971: 149-155.
 }
 \examples{
-data(xmp13.10)
+str(xmp13.10)
 }
 \keyword{datasets}

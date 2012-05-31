@@ -22,8 +22,6 @@
     }
   }
 }
-\details{
-}
 \source{
   Devore, J. L. (2003) \emph{Probability and Statistics for Engineering
     and the Sciences (6th ed)}, Duxbury
@@ -32,7 +30,6 @@
     Trades' Chemists}, 287.
 }
 \examples{
-data(xmp11.12)
 xmp11.12$row <- ordered(xmp11.12$row)
 xmp11.12$column <- ordered(xmp11.12$column)
 xmp11.12$humidity <- ordered(xmp11.12$humidity)

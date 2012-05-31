@@ -5,7 +5,6 @@
 \description{
   Five observations of the maximum weight of lift.
 }
-\usage{data(xmp08.09)}
 \format{
   A data frame with 5 observations on the following variable.
   \describe{
@@ -21,7 +20,6 @@
   for a Floor-to-Knuckle Lifting Task'', \emph{Ergonomics}, 1992: 833--843.
 }
 \examples{
-data(xmp08.09)
 str(xmp08.09)
 with(xmp08.09, t.test(MAWL, mu = 25, alt = "greater"))
 }

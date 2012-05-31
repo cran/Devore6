@@ -13,7 +13,6 @@
     \item{Type}{a factor with levels \code{Creamy} \code{Crunchy}}
   }
 }
-%\details{}
 \source{
   Devore, J. L. (2003) \emph{Probability and Statistics for Engineering
     and the Sciences (6th ed)}, Duxbury
@@ -22,7 +21,6 @@
   \emph{Consumer Reports}, Sept. 1990.
 }
 \examples{
-data(ex01.15)
 str(ex01.15)
 }
 \keyword{datasets}

@@ -1,3 +1,0 @@
-"Method"	"n"	"mean"	"SD"
-"Fixed"	"10"	"807"	"27"
-"Floating"	"10"	"757"	"41"

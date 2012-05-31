@@ -1,3 +1,0 @@
-"Gender"	"Sample Size"	"Sample Mean"	"Sample Standard Deviation"
-"Males"	97	10.4	4.83
-"Females"	148	9.26	4.68

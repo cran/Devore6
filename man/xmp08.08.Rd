@@ -23,7 +23,6 @@
   \emph{J. Testing and Evaluation}, 7-14.
 }
 \examples{
-data(xmp08.08)
 boxplot(xmp08.08, main = "DCP readings")
 attach(xmp08.08)
 hist(DCP, breaks = 8, prob = TRUE)

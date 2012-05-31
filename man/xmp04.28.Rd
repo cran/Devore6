@@ -19,7 +19,6 @@
 	Engineering and the Sciences (6th ed)}, Duxbury
 }
 \examples{
-data(xmp04.28)
 attach(xmp04.28)
 qqnorm(meas.err)   # compare to Figure 4.31, p. 188
 qqline(meas.err)

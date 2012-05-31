@@ -27,7 +27,6 @@
   \emph{Journal of Structural Engineering}, 247-254.
 }
 \examples{
-data(xmp01.11)
 attach(xmp01.11)
 hist(strength, xlab = "Bond strength", col = "lightgray")
 rug(strength)

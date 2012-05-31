@@ -31,7 +31,6 @@
   \emph{Australian J. Agricultural Research}, 744-748.
 }
 \examples{
-data(xmp11.11)
 coplot(Tempr ~ as.integer(Period) | Strain * Coat,
        data = xmp11.11, show.given = FALSE)
 coplot(Tempr ~ as.integer(Strain) | Period * Coat,

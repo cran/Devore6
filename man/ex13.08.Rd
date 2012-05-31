@@ -5,7 +5,6 @@
 \description{
   Relationship between heart rate and oxygen uptake during exercise
 }
-\usage{data(ex13.08)}
 \format{
   A data frame with 15 observations on the following 2 variables.
   \describe{
@@ -15,7 +14,6 @@
       maximum uptake)}
   }
 }
-%\details{}
 \source{
   Devore, J. L. (2003) \emph{Probability and Statistics for Engineering
     and the Sciences (6th ed)}, Duxbury
@@ -25,6 +23,6 @@
   Non-Steady State Exercise'', \emph{Ergonomics}, 2000: 1578-1592.
 }
 \examples{
-data(ex13.08)
+str(ex13.08)
 }
 \keyword{datasets}

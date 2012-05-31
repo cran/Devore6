@@ -28,7 +28,6 @@
   cotton DP fabric'', \emph{American Dyestuff Reporter}, 25-30.
 }
 \examples{
-data(xmp10.03)
 xmp10.03$Mixture <- factor(xmp10.03$Mixture)
 plot(Soiling ~ Mixture, data = xmp10.03, col = "lightgray",
      main = "Data from Example 10.3")

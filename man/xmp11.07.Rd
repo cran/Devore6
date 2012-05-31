@@ -22,8 +22,6 @@
     }
   }
 }
-\details{
-}
 \source{
   Devore, J. L. (2003) \emph{Probability and Statistics for Engineering
     and the Sciences (6th ed)}, Duxbury
@@ -32,7 +30,6 @@
   Nigeria'', \emph{Experimental Agriculture}, 43-47.
 }
 \examples{
-data(xmp11.07)
 plot(Yield ~ Density, data = xmp11.07, col = "lightgray",
   main = "Data from Example 11.7, page 450",
   xlab = "Density (plants/hectare)")

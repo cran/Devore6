@@ -7,14 +7,13 @@
   Cushing's disease.
 }
 \format{
-This data frame contains 15 observations on the following variable:
-\describe{
-\item{difference}{
-a numeric vector
+  This data frame contains 15 observations on the following variable:
+  \describe{
+    \item{difference}{
+      a numeric vector
+    }
+  }
 }
-}
-}
-%\details{}
 \source{
   Devore, J. L. (2003) \emph{Probability and Statistics for Engineering and the Sciences (6th ed)}, Duxbury
 }
@@ -24,6 +23,6 @@ a numeric vector
   1984: 889.
 }
 \examples{
-data(ex09.43)
+str(ex09.43)
 }
 \keyword{datasets}

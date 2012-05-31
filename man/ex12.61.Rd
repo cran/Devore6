@@ -5,7 +5,6 @@
 \description{
   Muscular endurance as a function of maximal lactate level.
 }
-\usage{data(ex12.61)}
 \format{
   A data frame with 14 observations on the following 2 variables.
   \describe{
@@ -13,7 +12,6 @@
     \item{y}{a numeric vector of muscular endurance}
   }
 }
-%\details{}
 \source{
   Devore, J. L. (2003) \emph{Probability and Statistics for Engineering
     and the Sciences (6th ed)}, Duxbury
@@ -24,6 +22,6 @@
     and Science in Sports and Exercise}, 1999: 1102--1107.
 }
 \examples{
-data(ex12.61)
+str(ex12.61)
 }
 \keyword{datasets}

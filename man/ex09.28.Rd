@@ -5,7 +5,6 @@
 \description{
   Single-step recovery from a forward fall
 }
-\usage{data(ex09.28)}
 \format{
   A data frame with 15 observations on the following 2 variables.
   \describe{
@@ -16,7 +15,6 @@
       (21-29 years)}
   }
 }
-%\details{}
 \source{
   Devore, J. L. (2003) \emph{Probability and Statistics for Engineering and the Sciences (6th ed)}, Duxbury
 
@@ -26,6 +24,6 @@
   Fall'', \emph{J. of Gerontology}, 1999: M44-M50.
 }
 \examples{
-data(ex09.28)
+str(ex09.28)
 }
 \keyword{datasets}

@@ -5,7 +5,6 @@
 \description{
   Rate of deposition versus current density
 }
-\usage{data(ex12.13)}
 \format{
   A data frame with 4 observations on the following 2 variables.
   \describe{
@@ -13,7 +12,6 @@
     \item{y}{a numeric vector of deposition rates (micrometers/min)}
   }
 }
-%\details{}
 \source{
   Devore, J. L. (2003) \emph{Probability and Statistics for Engineering
     and the Sciences (6th ed)}, Duxbury
@@ -23,6 +21,6 @@
   \emph{Plating and Surface Finishing}, Jan. 1997: 38--40
 }
 \examples{
-data(ex12.13)
+str(ex12.13)
 }
 \keyword{datasets}

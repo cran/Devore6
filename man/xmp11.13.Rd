@@ -22,14 +22,11 @@
     }
   }
 }
-\details{
-}
 \source{
   Devore, J. L. (2003) \emph{Probability and Statistics for Engineering
     and the Sciences (6th ed)}, Duxbury
 }
 \examples{
-data(xmp11.13)
 fm1 <- lm(Strength ~ age * tempture * soil, xmp11.13)
 anova(fm1)   # compare with Table 11.12, page 471
 }

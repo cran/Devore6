@@ -1,4 +1,0 @@
-ovaries.developed	Observed.count
-0	1212
-1	118
-2	58

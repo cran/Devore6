@@ -5,7 +5,6 @@
 \description{
   Mist generation versus fluid flow from metal removal fluids
 }
-\usage{data(ex12.36)}
 \format{
   A data frame with 7 observations on the following 2 variables.
   \describe{
@@ -15,7 +14,6 @@
       diameter less than 10 micrometers (mg/m-sq)}
   }
 }
-%\details{}
 \source{
   Devore, J. L. (2003) \emph{Probability and Statistics for Engineering and the Sciences (6th ed)}, Duxbury
 
@@ -25,6 +23,6 @@
   \emph{Lubrication Engr.}, 2002: 10--17.
 }
 \examples{
-data(ex12.36)
+str(ex12.36)
 }
 \keyword{datasets}

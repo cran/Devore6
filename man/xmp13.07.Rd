@@ -26,7 +26,6 @@
   \emph{J. Agricultural Eng. Research}, 353-361
 }
 \examples{
-data(xmp13.07)
 plot(yield ~ days, data = xmp13.07,
    main = "Compare to Figure 13.11(a), page 579")
 fm1 <- lm(yield ~ days + I(days^2), data = xmp13.07)

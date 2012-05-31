@@ -5,7 +5,6 @@
 \description{
   Toughness for high-strength concrete and values for Weibull plot
 }
-\usage{data(ex04.84)}
 \format{
   A data frame with 18 observations on the following 2 variables.
   \describe{
@@ -13,7 +12,6 @@
     \item{p}{a numeric vector}
   }
 }
-%\details{}
 \source{
   Devore, J. L. (2003) \emph{Probability and Statistics for Engineering
     and the Sciences (6th ed)}, Duxbury
@@ -24,6 +22,6 @@
   311-320.
 }
 \examples{
-data(ex04.84)
+str(ex04.84)
 }
 \keyword{datasets}

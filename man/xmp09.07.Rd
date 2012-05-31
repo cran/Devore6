@@ -6,7 +6,6 @@
   Data on the tensile strength of liner specimens, both when a certain
   fusion process was used and when this process was not used.
 }
-\usage{data(xmp09.07)}
 \format{
   A data frame with 18 observations on the following 2 variables.
   \describe{

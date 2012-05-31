@@ -25,7 +25,6 @@
   analysis",  \emph{J. Quality Technology}, 149--155.
 }
 \examples{
-data(xmp13.09)
 plot(strength ~ tempture, data = xmp13.09)
 fm1 <- lm(strength ~ tempture + I(tempture^2), data = xmp13.09)
 summary(fm1)

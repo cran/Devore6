@@ -5,7 +5,6 @@
 \description{
   Energy intake compared to energy expenditure for 7 soccer players
 }
-\usage{data(ex09.82)}
 \format{
   A data frame with 7 observations on the following 2 variables.
   \describe{
@@ -13,7 +12,6 @@
     \item{intake}{a numeric vector}
   }
 }
-%\details{}
 \source{
   Devore, J. L. (2003) \emph{Probability and Statistics for Engineering
     and the Sciences (6th ed)}, Duxbury
@@ -24,6 +22,6 @@
   2002: 391--397.
 }
 \examples{
-data(ex09.82)
+str(ex09.82)
 }
 \keyword{datasets}

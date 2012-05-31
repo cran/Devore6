@@ -5,7 +5,6 @@
 \description{
   Frequency table of the lengths (km) of bus routes.
 }
-\usage{data(ex01.80)}
 \format{
   A data frame with 15 observations on the following 2 variables.
   \describe{
@@ -22,6 +21,7 @@
   1995: 211-215.
 }
 \examples{
-data(ex01.80)
+str(ex01.80)
+summary(ex01.80)
 }
 \keyword{datasets}

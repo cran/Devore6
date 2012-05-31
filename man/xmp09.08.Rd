@@ -16,14 +16,11 @@
     }
   }
 }
-\details{
-}
 \source{
   Devore, J. L. (2003) \emph{Probability and Statistics for Engineering
     and the Sciences (6th ed)}, Duxbury
 }
 \examples{
-data(xmp09.08)
 boxplot(xmp09.08, main = "Boxplot of data from Example 9.8")
 attach(xmp09.08)
 boxplot(bottom-surface, main = "Boxplot of differences from Example 9.8")

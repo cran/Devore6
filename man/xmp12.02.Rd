@@ -29,7 +29,6 @@
     Journal of Forest Research}, 386--397
 }
 \examples{
-data(xmp12.02)
 plot(dieback ~ soil.pH, data = xmp12.02,
      xlab = "soil pH", ylab = "mean crown dieback (\%)",
      main = "Data from Example 12.2, page 491")

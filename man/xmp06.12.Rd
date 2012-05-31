@@ -15,8 +15,6 @@
 	}
     }
 }
-\details{
-}
 \source{
     Devore, J. L. (2003) \emph{Probability and Statistics for
 	Engineering and the Sciences (6th ed)}, Duxbury.
@@ -25,7 +23,6 @@
 	Reliability Applications in the Biomedical Sciences}, Wiley.
 }
 \examples{
-data(xmp06.12)
 attach(xmp06.12)
 gamma.MoM <- function(x) {
    ## calculate method of moments estimates for gamma distribution

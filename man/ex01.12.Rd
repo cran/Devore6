@@ -5,7 +5,6 @@
 \description{
   Specific gravity values for various wood types.
 }
-\usage{data(ex01.12)}
 \format{
   A data frame with 36 observations on the following variable.
   \describe{
@@ -20,7 +19,6 @@
   \emph{J. of Structural Engr.}, 1993: 2169-2186.
 }
 \examples{
-data(ex01.12)
 str(ex01.12)
 }
 \keyword{datasets}

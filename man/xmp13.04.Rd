@@ -26,7 +26,6 @@
   significance'', \emph{Plant Physiology}, 719-722.
 }
 \examples{
-data(xmp13.04)
 plot(Ethylene ~ time, data = xmp13.04,
      xlab = "Exposure time (min)",
      ylab = "Ethylene content (nL/g dry wt)",

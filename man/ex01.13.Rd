@@ -12,7 +12,6 @@
     \item{strength}{a numeric vector}
   }
 }
-%\details{}
 \source{
   Devore, J. L. (2003) \emph{Probability and Statistics for Engineering
     and the Sciences (6th ed)}, Duxbury
@@ -22,7 +21,6 @@
   \emph{J. Testing and Evaluation}, 1998: 293-299.
 }
 \examples{
-data(ex01.13)
 str(ex01.13)
 }
 \keyword{datasets}

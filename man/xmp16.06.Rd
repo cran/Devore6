@@ -3,22 +3,20 @@
 \docType{data}
 \title{data from Example 16.6}
 \description{
-The \code{xmp16.06} data frame has 25 rows and 1 columns.
+  The \code{xmp16.06} data frame has 25 rows and 1 columns.
 }
 \format{
-This data frame contains the following columns:
-\describe{
-\item{defects}{
-a numeric vector
-}
-}
-}
-\details{
+  This data frame contains the following columns:
+  \describe{
+    \item{defects}{
+      a numeric vector
+    }
+  }
 }
 \source{
   Devore, J. L. (2003) \emph{Probability and Statistics for Engineering and the Sciences (6th ed)}, Duxbury
 }
 \examples{
-data(xmp16.06)
+str(xmp16.06)
 }
 \keyword{datasets}

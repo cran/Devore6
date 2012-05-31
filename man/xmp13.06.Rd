@@ -24,7 +24,6 @@
     and the Sciences (6th ed)}, Duxbury
 }
 \examples{
-data(xmp13.06)
 fm1 <- glm(Failure ~ Temperature, 
     data = xmp13.06, family = "binomial")
 ## results are different from JMP results in Figure 13.9

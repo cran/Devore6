@@ -29,7 +29,6 @@
   workstation layout'', \emph{Ergometrics}, 877-884.
 }
 \examples{
-data(xmp12.01)
 plot(OSA ~ palprebal, data = xmp12.01,
      xlab = "Palprebal fissure width (cm)",
      ylab = expression(paste(plain("Occular surface area (cm")^2,

@@ -23,7 +23,6 @@
   50-53.
 }
 \examples{
-data(xmp06.03)
 attach(xmp06.03)
 stem(Strength)
 var(Strength)  # usual (unbiased) estimate of sigma^2

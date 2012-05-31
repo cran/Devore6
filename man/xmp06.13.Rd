@@ -24,7 +24,6 @@
 	Series A, General}, \bold{134}, 623--629
 }
 \examples{
-data(xmp06.13)
 attach(xmp06.13)
 table(goals)      # compare to frequency table on p. 267
 hist(goals, breaks = 0:12 - 0.5, las = 1, col = "lightgray")

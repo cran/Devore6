@@ -27,7 +27,6 @@
   \bold{82}, 705--711.
 }
 \examples{
-data(ex01.14)
 str(ex01.14)
 }
 \keyword{datasets}

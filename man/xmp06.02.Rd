@@ -21,7 +21,6 @@
     and the Sciences (6th ed)}, Duxbury
 }
 \examples{
-data(xmp06.02)
 summary(xmp06.02)                # gives mean, median, etc.
 attach(xmp06.02)
 mean(range(Voltage))             # average of the extremes

@@ -6,7 +6,6 @@
   Production of beta-carotene according to amounts of lineolic acid,
   kerosene, and antioxidant.
 }
-\usage{data(ex13.52)}
 \format{
   A data frame with 20 observations on the following 4 variables.
   \describe{
@@ -16,7 +15,6 @@
     \item{Betacaro}{a numeric vector}
   }
 }
-%\details{}
 \source{
   Devore, J. L. (2003) \emph{Probability and Statistics for Engineering
     and the Sciences (6th ed)}, Duxbury
@@ -27,6 +25,6 @@
     Biotechnology}, 2002: 933-943.
 }
 \examples{
-data(ex13.52)
+str(ex13.52)
 }
 \keyword{datasets}

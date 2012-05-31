@@ -5,14 +5,12 @@
 \description{
   Amount of organic matter in soil samples.
 }
-\usage{data(ex08.54)}
 \format{
   A data frame with 30 observations on the following variable.
   \describe{
     \item{percorg}{a numeric vector of percentages of organic matter}
   }
 }
-%\details{}
 \source{
   Devore, J. L. (2003) \emph{Probability and Statistics for Engineering and the Sciences (6th ed)}, Duxbury
 }
@@ -20,6 +18,6 @@
   ``Engineering Proeprties of Soil'', \emph{Soil Science}, 1998: 93--102.
 }
 \examples{
-data(ex08.54)
+str(ex08.54)
 }
 \keyword{datasets}

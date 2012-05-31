@@ -2,7 +2,6 @@
 \alias{xmp10.08}
 \docType{data}
 \title{data from Example 10.8}
-\usage{data(xmp10.08)}
 \description{
   The \code{xmp10.08} data frame has 22 rows and 2 columns of data on
   the elastic modulus of Mg-based alloys obtained by a new ultrasonic
@@ -16,8 +15,6 @@
       \code{Die}, \code{Permanent}, and \code{Plaster}}
   }
 }
-\details{
-}
 \source{
     Devore, J. L. (2003) \emph{Probability and Statistics for Engineering
     and the Sciences (6th ed)}, Duxbury
@@ -27,7 +24,6 @@
   of yield strength in Mg-based alloys'', \emph{Light Metal Age}, Oct. 51--53.
 }
 \examples{
-data(xmp10.08)
 str(xmp10.08)
 fm1 <- aov(elastic ~ type, data = xmp10.08)
 anova(fm1)

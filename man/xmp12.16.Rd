@@ -5,7 +5,6 @@
 \description{
   Correlation of concentrations of two pollutants
 }
-\usage{data(xmp12.16)}
 \format{
   A data frame with 16 observations on the following 2 variables.
   \describe{
@@ -14,7 +13,6 @@
       (microgram/m-cub)}
   }
 }
-%\details{}
 \source{
   Devore, J. L. (2003) \emph{Probability and Statistics for Engineering
     and the Sciences (6th ed)}, Duxbury
@@ -25,7 +23,6 @@
   \emph{J. Air Polution Control Fed.}, 1984: 643-650.
 }
 \examples{
-data(xmp12.16)
 plot(y ~ x, data = xmp12.16, xlab = "Ozone concentration (ppm)",
      ylab = "Secondary carbon concentration")
 cor(xmp12.16$x, xmp12.16$y)

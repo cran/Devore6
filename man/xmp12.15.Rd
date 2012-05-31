@@ -3,25 +3,23 @@
 \docType{data}
 \title{data from Example 12.15}
 \description{
-The \code{xmp12.15} data frame has 16 rows and 2 columns.
+  The \code{xmp12.15} data frame has 16 rows and 2 columns.
 }
 \format{
-This data frame contains the following columns:
-\describe{
-\item{ozone}{
-a numeric vector
-}
-\item{carbon}{
-a numeric vector
-}
-}
-}
-\details{
+  This data frame contains the following columns:
+  \describe{
+    \item{ozone}{
+      a numeric vector
+    }
+    \item{carbon}{
+      a numeric vector
+    }
+  }
 }
 \source{
   Devore, J. L. (2003) \emph{Probability and Statistics for Engineering and the Sciences (6th ed)}, Duxbury
 }
 \examples{
-data(xmp12.15)
+str(xmp12.15)
 }
 \keyword{datasets}

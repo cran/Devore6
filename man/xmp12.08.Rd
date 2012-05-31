@@ -30,7 +30,6 @@
   for composite materials'', \emph{Materials Evaluation}, 561-565.
 }
 \examples{
-data(xmp12.08)
 plot(attenuat ~ strength, data = xmp12.08,
      xlab = "Fracture strength (\% of ultimate tensile strength)",
      ylab = "Attenuation (neper/cm)",

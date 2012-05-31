@@ -5,7 +5,6 @@
 \description{
   Monetary awards in lawsuits.
 }
-\usage{data(ex01.50)}
 \format{
   A data frame with 27 observations on the following variable.
   \describe{
@@ -19,9 +18,7 @@
 \source{
   Devore, J. L. (2003) \emph{Probability and Statistics for Engineering and the Sciences (6th ed)}, Duxbury
 }
-%\references{}
 \examples{
-data(ex01.50)
 str(ex01.50)
 }
 \keyword{datasets}

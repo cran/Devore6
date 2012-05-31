@@ -34,7 +34,6 @@
     and the Sciences (6th ed)}, Duxbury
 }
 \examples{
-data(xmp11.16)
 ## leave -1/+1 encoding for experimental factors, convert block
 fm1 <- aov(strength ~ tempture * gas * conc + block,
            data = xmp11.16)

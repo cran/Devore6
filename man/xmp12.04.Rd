@@ -24,7 +24,6 @@
   lots'' \emph{J. of Transportation Engineering}, 476-484.
 }
 \examples{
-data(xmp12.04)
 plot(porosity ~ weight, data = xmp12.04,
      xlab = "Unit weight (pcf) of concrete specimen",
      ylab = "Porosity (\%)",

@@ -2,7 +2,6 @@
 \alias{ex10.42}
 \docType{data}
 \title{data from exercise 10.42}
-\usage{data(ex10.42)}
 \description{
   The \code{ex10.42} data frame has 19 rows and 2 columns of critical
   flicker frequencies according to eye color.
@@ -20,7 +19,6 @@
     and the Sciences (6th ed)}, Duxbury
 }
 \examples{
-data(ex10.42)
 str(ex10.42)
 boxplot(cff ~ color, ex10.42, horizontal = TRUE, las = 1,
   xlab = "Critical Flicker Frequency (Hz)")

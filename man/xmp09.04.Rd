@@ -24,13 +24,11 @@
     }
   }
 }
-\details{
-}
 \source{
   Devore, J. L. (2003) \emph{Probability and Statistics for Engineering
     and the Sciences (6th ed)}, Duxbury
 }
 \examples{
-data(xmp09.04)
+str(xmp09.04)
 }
 \keyword{datasets}

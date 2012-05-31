@@ -5,7 +5,6 @@
 \description{
   Crack lengths in corrosion tests
 }
-\usage{data(xmp01.13)}
 \format{
   A data frame with 21 observations on the following variable.
   \describe{
@@ -23,7 +22,6 @@
     Science}, 1989: 53--68.
 }
 \examples{
-data(xmp01.13)
 str(xmp01.13)
 }
 \keyword{datasets}

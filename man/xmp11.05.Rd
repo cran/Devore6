@@ -29,7 +29,6 @@
     and the Sciences (6th ed)}, Duxbury
 }
 \examples{
-data(xmp11.05)
 plot(power ~ humid, data = xmp11.05, col = "lightgray",
      xlab = "Level of humidity",
      ylab = "Estimated annual power consumption (kwh)",
